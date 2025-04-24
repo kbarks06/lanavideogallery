@@ -73,6 +73,7 @@ nav a:hover {
 main{
     grid-area: gallery;
     padding: 2rem;
+    align-items: center;
 }
 section{
     max-width: 75%;
@@ -140,3 +141,69 @@ footer{
 }
 
 
+@media screen and (max-width: 768px) {
+    body {
+        display: block; /* stacks layout vertically */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+
+    header img {
+        width: 80px;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        width: 100%;
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav li {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        align-items: center;
+        gap: 2rem;
+    }
+
+    article {
+        width: 95%;
+    }
+
+    .caption {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #cornerBtn {
+        bottom: 20px;
+        right: 20px;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
